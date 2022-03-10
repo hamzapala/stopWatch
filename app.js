@@ -7,11 +7,6 @@ const start = document.querySelector(".start");
 const pause = document.querySelector(".pause");
 const stop = document.querySelector(".stop");
 let myMinute = 0
-stop.addEventListener("click", ()=>{
-    minute.innerHTML = "00";
-    second.innerHTML = "00";
-    mili.innerHTML = "00";   
-})
 start.addEventListener("click", ()=>{
     let myInterval = setInterval(() => {
         mili.innerHTML = ((Number(mili.innerText) + 1) % 100).toString().padStart(2, "0");
