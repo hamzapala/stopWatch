@@ -11,11 +11,11 @@ start.addEventListener("click", ()=>{
         if (mili.innerHTML == "00") {
             second.innerHTML = ((Number(second.innerText) + 1) % 60).toString().padStart(2, "0");
         }
-       if (second.innerText == "59") {
+        if (second.innerText == "59") {
            myMinute++;
-        if ((myMinute % 100) == 0) {
-            minute.innerHTML = (Number(minute.innerText) + 1).toString().padStart(2, "0");
-        }
+            if ((myMinute % 100) == 0) {
+                minute.innerHTML = (Number(minute.innerText) + 1).toString().padStart(2, "0");
+            }
        }
     }, 10);
     start.style.display = "none";
