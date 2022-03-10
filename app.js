@@ -1,5 +1,3 @@
-let realTime = new Date();
-let realSecond = (realTime.getMilliseconds()/10).toFixed(0);
 const minute = document.querySelector(".minute");
 const second = document.querySelector(".second");
 const mili = document.querySelector(".mili");
